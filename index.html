@@ -8,7 +8,7 @@
 <meta property="og:title" content="Hidefumi Obayashi | Director / Video Editor">
 <meta property="og:description" content="Director / Video Editor — Music Video, YouTube, Brand Film, Short-form.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="img/00.jpg">
+<meta property="og:image" content="https://hobayashi-sketch.github.io/portfolio/img/17.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b0b0b">
 <link rel="icon" href="img/avatar.jpg">
@@ -45,13 +45,12 @@ header.scrolled{background:rgba(11,11,11,.85);backdrop-filter:blur(12px);border-
 @media(max-width:700px){.nav-r .nl{display:none}}
 
 /* hero */
-.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding-bottom:72px;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:url(img/00.jpg) center/cover no-repeat;transform:scale(1.05);animation:zoom 18s ease-out forwards}
-@keyframes zoom{to{transform:scale(1)}}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,.35) 0%,rgba(11,11,11,.2) 40%,rgba(11,11,11,.95) 100%)}
+.hero{position:relative;min-height:88svh;display:flex;align-items:center;padding:120px 0 72px;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-tag{font-size:clamp(15px,1.6vw,18px);color:var(--sub);margin-top:28px;max-width:560px}
+.hero h1 .dot{color:var(--accent)}
 .hero .wrap{position:relative;z-index:1;width:100%}
 .hero-role{font-family:var(--en);font-size:13px;letter-spacing:.3em;color:var(--accent);margin-bottom:18px}
-.hero h1{font-family:var(--en);font-weight:700;font-size:clamp(44px,9vw,120px);line-height:.95;letter-spacing:-.02em}
+.hero h1{font-family:var(--en);font-weight:700;font-size:clamp(48px,11vw,168px);line-height:.95;letter-spacing:-.02em}
 .hero h1 .ja{display:block;font-family:var(--ja);font-size:clamp(16px,2vw,20px);font-weight:500;letter-spacing:.2em;margin-top:18px;color:var(--sub)}
 .hero-cta{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:99px;font:500 14px var(--en);letter-spacing:.05em;transition:transform .2s,background .2s}
@@ -121,7 +120,7 @@ section{padding:120px 0}
 .marquee-in{display:inline-flex;gap:48px;animation:mq 40s linear infinite;font-size:clamp(18px,2.4vw,26px);font-weight:700;color:#5a5a5a}
 .marquee-in span::after{content:"／";margin-left:48px;color:#333}
 @keyframes mq{to{transform:translateX(-50%)}}
-@media(prefers-reduced-motion:reduce){.marquee-in,.hero-bg{animation:none}}
+@media(prefers-reduced-motion:reduce){.marquee-in{animation:none}}
 
 /* contact */
 .contact{text-align:center}
@@ -166,11 +165,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   </div>
 </header>
 
-<section class="hero" id="top" style="padding-top:0">
-  <div class="hero-bg"></div>
+<section class="hero" id="top">
   <div class="wrap">
     <div class="hero-role">DIRECTOR / PRODUCER / VIDEO EDITOR</div>
-    <h1>Hidefumi<br>Obayashi<span class="ja ja-only">大林 秀文</span></h1>
+    <h1>Hidefumi<br>Obayashi<span class="dot">.</span><span class="ja ja-only">大林 秀文</span></h1>
+    <p class="hero-tag ja-only">企画・撮影ディレクションから編集まで。ミュージックビデオ、YouTube、広告、SNSショート動画をつくっています。</p>
+    <p class="hero-tag en-only">From planning and direction to the final cut — music videos, YouTube, ads and short-form content.</p>
     <div class="hero-cta">
       <a class="btn btn-a" href="#works"><span class="ja-only">作品を見る</span><span class="en-only">View Works</span> →</a>
       <a class="btn btn-o" href="#contact"><span class="ja-only">お問い合わせ</span><span class="en-only">Contact</span></a>
