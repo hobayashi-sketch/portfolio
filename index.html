@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hidefumi Obayashi | Director / Video Editor</title>
+<meta name="description" content="映像ディレクター／エディター 大林秀文のポートフォリオ。MV、YouTube、ブランドムービー、SNSショート動画。">
+<meta property="og:title" content="Hidefumi Obayashi | Director / Video Editor">
+<meta property="og:description" content="Director / Video Editor — Music Video, YouTube, Brand Film, Short-form.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/00.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="icon" href="img/avatar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0b0b; --bg2:#141414; --line:#262626; --text:#f2f2f2; --sub:#9a9a9a;
+  --accent:#E8FF47; --accent-ink:#0b0b0b;
+  --en:"Space Grotesk",system-ui,sans-serif;
+  --ja:"Zen Kaku Gothic New","Hiragino Sans",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--ja);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+@media(max-width:600px){.wrap{padding:0 16px}}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(11,11,11,.85);backdrop-filter:blur(12px);border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--en);font-weight:700;letter-spacing:.04em;font-size:15px}
+.logo span{color:var(--accent)}
+.nav-r{display:flex;align-items:center;gap:28px;font-family:var(--en);font-size:13px;letter-spacing:.08em}
+.nav-r a:not(.lang){opacity:.75;transition:opacity .2s}
+.nav-r a:hover{opacity:1}
+.lang{display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.lang button{background:none;border:0;color:var(--sub);font:500 12px var(--en);padding:6px 12px;cursor:pointer}
+.lang button.on{background:var(--accent);color:var(--accent-ink)}
+@media(max-width:700px){.nav-r .nl{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding-bottom:72px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url(img/00.jpg) center/cover no-repeat;transform:scale(1.05);animation:zoom 18s ease-out forwards}
+@keyframes zoom{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,.35) 0%,rgba(11,11,11,.2) 40%,rgba(11,11,11,.95) 100%)}
+.hero .wrap{position:relative;z-index:1;width:100%}
+.hero-role{font-family:var(--en);font-size:13px;letter-spacing:.3em;color:var(--accent);margin-bottom:18px}
+.hero h1{font-family:var(--en);font-weight:700;font-size:clamp(44px,9vw,120px);line-height:.95;letter-spacing:-.02em}
+.hero h1 .ja{display:block;font-family:var(--ja);font-size:clamp(16px,2vw,20px);font-weight:500;letter-spacing:.2em;margin-top:18px;color:var(--sub)}
+.hero-cta{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:99px;font:500 14px var(--en);letter-spacing:.05em;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-a{background:var(--accent);color:var(--accent-ink)}
+.btn-o{border:1px solid rgba(255,255,255,.35)}
+.btn-o:hover{background:rgba(255,255,255,.08)}
+.scroll{position:absolute;right:24px;bottom:32px;z-index:1;font:500 11px var(--en);letter-spacing:.3em;writing-mode:vertical-rl;color:var(--sub)}
+@media(max-width:600px){.scroll{display:none}.hero-role{font-size:11px;letter-spacing:.14em}}
+
+/* sections */
+section{padding:120px 0}
+@media(max-width:600px){section{padding:80px 0}}
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:48px;flex-wrap:wrap}
+.sec-h h2{font-family:var(--en);font-size:clamp(32px,5vw,56px);font-weight:700;letter-spacing:-.01em;line-height:1}
+.sec-h h2 small{display:block;font-family:var(--ja);font-size:13px;font-weight:500;color:var(--accent);letter-spacing:.2em;margin-bottom:12px}
+
+/* filter */
+.filter{display:flex;gap:8px;flex-wrap:wrap}
+.filter button{background:none;border:1px solid var(--line);color:var(--sub);padding:8px 16px;border-radius:99px;font:500 13px var(--ja);cursor:pointer;transition:all .2s}
+.filter button:hover{color:var(--text);border-color:#444}
+.filter button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+
+/* works grid */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 20px;grid-auto-flow:dense}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.card{cursor:pointer;display:block}
+.card.hide{display:none}
+.thumb{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:var(--bg2)}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s,filter .3s;filter:brightness(.9)}
+.thumb.v img{object-position:center 25%}
+.card:hover .thumb img{transform:scale(1.05);filter:brightness(1)}
+.play{position:absolute;left:14px;bottom:14px;width:44px;height:44px;border-radius:50%;background:var(--accent);display:grid;place-items:center;opacity:0;transform:translateY(6px);transition:all .25s}
+.play svg{width:16px;height:16px;fill:var(--accent-ink);margin-left:2px}
+.card:hover .play{opacity:1;transform:none}
+.badge{position:absolute;top:12px;left:12px;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);font:500 11px var(--en);letter-spacing:.08em;padding:4px 10px;border-radius:99px}
+.card h3{font-size:16px;font-weight:700;margin-top:14px;line-height:1.5}
+.card p{font-size:12px;color:var(--sub);margin-top:4px;font-family:var(--en);letter-spacing:.03em}
+.card.feat{grid-column:span 2}
+.card.feat .thumb{aspect-ratio:16/8.4}
+.card.feat h3{font-size:20px}
+@media(max-width:560px){.card.feat{grid-column:span 1}.card.feat .thumb{aspect-ratio:16/9}}
+
+/* about */
+.about{display:grid;grid-template-columns:280px 1fr;gap:64px;align-items:start}
+@media(max-width:800px){.about{grid-template-columns:1fr;gap:32px}}
+.avatar{width:100%;max-width:280px;aspect-ratio:1;border-radius:20px;object-fit:cover;background:#fff4c8}
+.about-body p{font-size:16px;color:#d6d6d6;margin-bottom:20px}
+.about-body .lead{font-size:clamp(20px,2.4vw,26px);font-weight:700;color:var(--text);line-height:1.6;margin-bottom:28px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;border-top:1px solid var(--line);padding-top:32px}
+.stats b{display:block;font:700 clamp(32px,4vw,44px)/1 var(--en);color:var(--accent)}
+.stats span{font-size:12px;color:var(--sub)}
+
+/* skills */
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:800px){.cols{grid-template-columns:1fr}}
+.box{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:28px}
+.box h4{font:500 12px var(--en);letter-spacing:.2em;color:var(--accent);margin-bottom:18px}
+.box ul{list-style:none}
+.box li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px;display:flex;justify-content:space-between;gap:12px}
+.box li:last-child{border:0}
+.box li em{font-style:normal;color:var(--sub);font-size:12px;font-family:var(--en)}
+
+/* clients marquee */
+.marquee{overflow:hidden;border-block:1px solid var(--line);padding:22px 0;white-space:nowrap}
+.marquee-in{display:inline-flex;gap:48px;animation:mq 40s linear infinite;font-size:clamp(18px,2.4vw,26px);font-weight:700;color:#5a5a5a}
+.marquee-in span::after{content:"／";margin-left:48px;color:#333}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-in,.hero-bg{animation:none}}
+
+/* contact */
+.contact{text-align:center}
+.contact h2{font:700 clamp(40px,8vw,96px)/1 var(--en);letter-spacing:-.02em}
+.contact p{color:var(--sub);margin:24px 0 40px}
+.contact .btn{font-size:16px;padding:18px 34px}
+.socials{display:flex;justify-content:center;gap:12px;margin-top:20px;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:28px 0;font:12px var(--en);color:var(--sub)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal-in{width:min(1100px,100%)}
+.modal-frame{position:relative;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
+.modal-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.modal-meta{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:16px;flex-wrap:wrap}
+.modal-meta h3{font-size:18px}
+.modal-meta p{color:var(--sub);font:13px var(--en)}
+.close{position:absolute;top:16px;right:20px;background:none;border:0;color:#fff;font-size:36px;line-height:1;cursor:pointer}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+
+/* i18n */
+[data-l="en"] .ja-only{display:none}
+[data-l="ja"] .en-only{display:none}
+</style>
+</head>
+<body data-l="ja">
+
+<header id="hd">
+  <div class="wrap nav">
+    <a href="#top" class="logo">HIDEFUMI OBAYASHI<span>.</span></a>
+    <nav class="nav-r">
+      <a class="nl" href="#works">WORKS</a>
+      <a class="nl" href="#about">ABOUT</a>
+      <a class="nl" href="#contact">CONTACT</a>
+      <div class="lang"><button data-set="ja">JP</button><button data-set="en">EN</button></div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top" style="padding-top:0">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <div class="hero-role">DIRECTOR / PRODUCER / VIDEO EDITOR</div>
+    <h1>Hidefumi<br>Obayashi<span class="ja ja-only">大林 秀文</span></h1>
+    <div class="hero-cta">
+      <a class="btn btn-a" href="#works"><span class="ja-only">作品を見る</span><span class="en-only">View Works</span> →</a>
+      <a class="btn btn-o" href="#contact"><span class="ja-only">お問い合わせ</span><span class="en-only">Contact</span></a>
+    </div>
+  </div>
+  <div class="scroll">SCROLL</div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-in" id="mq"></div></div>
+
+<section id="works">
+  <div class="wrap">
+    <div class="sec-h rv">
+      <h2><small>作品</small>Selected Works</h2>
+      <div class="filter" id="filter"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="about" style="background:#0f0f0f">
+  <div class="wrap">
+    <div class="sec-h rv"><h2><small>プロフィール</small>About</h2></div>
+    <div class="about rv">
+      <img class="avatar" src="img/avatar.jpg" alt="Hidefumi Obayashi">
+      <div class="about-body">
+        <p class="lead ja-only">企画・撮影ディレクションから編集まで。<br>伝えたいことが、ちゃんと届く映像をつくります。</p>
+        <p class="lead en-only">From planning and on-set direction to the final cut —<br>videos that get the message across.</p>
+        <p class="ja-only">映像ディレクター／エディター。アーティストのミュージックビデオ、タレントのYouTube、ブランドムービー、医療・ホテル・アパレルなどのSNSショート動画を手がけています。企画段階から関わり、撮影の進行、編集・テロップ・仕上げまで一貫して担当します。</p>
+        <p class="en-only">Director and video editor based in Japan. I create music videos, YouTube content for talents and creators, brand films, and short-form videos for clinics, hotels and fashion brands — staying involved from the first plan through the shoot, edit, captions and final delivery.</p>
+        <div class="stats">
+          <div><b>21</b><span class="ja-only">掲載作品</span><span class="en-only">Featured works</span></div>
+          <div><b>4</b><span class="ja-only">ジャンル</span><span class="en-only">Genres</span></div>
+          <div><b>20+</b><span class="ja-only">クライアント・出演者</span><span class="en-only">Clients &amp; talents</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-h rv"><h2><small>できること</small>Services &amp; Tools</h2></div>
+    <div class="cols rv">
+      <div class="box"><h4>DIRECTION</h4><ul>
+        <li><span class="ja-only">企画・構成</span><span class="en-only">Planning &amp; Structure</span></li>
+        <li><span class="ja-only">撮影ディレクション</span><span class="en-only">On-set Direction</span></li>
+        <li><span class="ja-only">プロデュース・進行管理</span><span class="en-only">Production Management</span></li>
+        <li><span class="ja-only">撮影</span><span class="en-only">Videography</span></li>
+      </ul></div>
+      <div class="box"><h4>EDITING</h4><ul>
+        <li><span class="ja-only">ミュージックビデオ</span><span class="en-only">Music Video</span></li>
+        <li><span class="ja-only">YouTube（対談・バラエティ）</span><span class="en-only">YouTube (Talk / Variety)</span></li>
+        <li><span class="ja-only">ブランドムービー・広告</span><span class="en-only">Brand Film / Ads</span></li>
+        <li><span class="ja-only">SNS縦型ショート</span><span class="en-only">Vertical Short-form</span></li>
+      </ul></div>
+      <div class="box"><h4>TOOLS</h4><ul>
+        <li>Adobe Premiere Pro<em>Edit</em></li>
+        <li>Adobe After Effects<em>Motion</em></li>
+        <li>DaVinci Resolve<em>Color</em></li>
+        <li>CapCut<em>Short-form</em></li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap rv">
+    <h2>Let's make<br>something.</h2>
+    <p class="ja-only">撮影・編集のご依頼、ご相談はお気軽にどうぞ。</p>
+    <p class="en-only">Open for direction and editing projects. Feel free to get in touch.</p>
+    <a class="btn btn-a" href="mailto:h.bayashi00@gmail.com">h.bayashi00@gmail.com</a>
+    <div class="socials">
+      <a class="btn btn-o" href="https://www.youtube.com/channel/UCT-EVGTczC_6-AzVexGHBPw" target="_blank" rel="noopener">YouTube ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© 2026 Hidefumi Obayashi</span><span>Director / Video Editor — Japan</span></div></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <button class="close" id="close" aria-label="close">×</button>
+  <div class="modal-in">
+    <div class="modal-frame" id="frame"></div>
+    <div class="modal-meta"><div><h3 id="mt"></h3><p id="mr"></p></div><a class="btn btn-o" id="mlink" target="_blank" rel="noopener">YouTube ↗</a></div>
+  </div>
+</div>
+
+<script>
+// 作品データ（cat: mv / yt / brand / sns, feat: 大きく表示）
+const WORKS = [
+  {img:"00",cat:"brand",feat:1,ja:"BBQ PIT｜東京プリンスホテル",en:"BBQ PIT | Tokyo Prince Hotel",role:"Direction / Editing",url:"https://youtu.be/JAsaqJ1nT8k"},
+  {img:"12",cat:"brand",ja:"ヨックモック 春夏イメージムービー",en:"YOKU MOKU Spring/Summer Image Movie",role:"Editing",url:"https://www.youtube.com/watch?v=PLfGoqU-Usg"},
+  {img:"17",cat:"mv",feat:1,ja:"Mrs. GREEN APPLE",en:"Mrs. GREEN APPLE",role:"Editing",url:"https://www.youtube.com/watch?v=kDLhXGLgXHY"},
+  {img:"15",cat:"yt",ja:"後藤真希 YouTube",en:"Maki Goto — YouTube",role:"Editing",url:"https://www.youtube.com/watch?v=1TKdh2WAHCI"},
+  {img:"07",cat:"brand",feat:1,ja:"KNOCK OUT.65 トレーラー",en:"KNOCK OUT.65 Trailer",role:"Editing",url:"https://www.youtube.com/watch?v=Jj1BiClDZmw"},
+  {img:"03",cat:"mv",ja:"UK『Made Up Your Mind』Official MV",en:"UK \"Made Up Your Mind\" Official MV",role:"Music Video Editing",url:"https://www.youtube.com/watch?v=z4oXh0jr5cQ"},
+  {img:"19",cat:"mv",ja:"福本大晴「恋の上昇気流」MV",en:"Taisei Fukumoto \"Koi no Joshokiryu\" MV",role:"Music Video Editing",url:"https://www.youtube.com/watch?v=_44U6ZbTvs8"},
+  {img:"20",cat:"yt",ja:"早乙女太一 YouTube",en:"Taichi Saotome — YouTube",role:"Editing",url:"https://www.youtube.com/watch?v=i2AGO9xsceY&t=486s"},
+  {img:"02",cat:"yt",ja:"Mr.都市伝説 関暁夫の情熱が止まらない",en:"Mr. Urban Legend Akio Seki",role:"Editing",url:"https://www.youtube.com/watch?v=v_F7Rurq1SE"},
+  {img:"14",cat:"yt",ja:"柳橋唯 YouTube",en:"Yui Yanagibashi — YouTube",role:"Editing",url:"https://www.youtube.com/watch?v=blxC2i3KEuY"},
+  {img:"18",cat:"yt",ja:"ニコラTV",en:"nicola TV",role:"Editing",url:"https://www.youtube.com/watch?v=2FMytEZv-es"},
+  {img:"13",cat:"yt",ja:"私立パラの丸高校",en:"Shiritsu Paranomaru High School",role:"Editing",url:"https://www.youtube.com/watch?v=TMunal15DoE"},
+  {img:"09",cat:"yt",ja:"ワンエンちゃんねる",en:"One-en Channel",role:"Editing",url:"https://www.youtube.com/watch?v=SJsLg2LlWoA&t=245s"},
+  {img:"16",cat:"yt",ja:"しごとリーチ",en:"Shigoto Reach",role:"Editing",url:"https://www.youtube.com/watch?v=SUvdOPIUPSY"},
+  {img:"01",cat:"yt",ja:"秦卓民 ビジネスコーチch 対談",en:"Business Coach Channel — Talk",role:"Editing",url:"https://www.youtube.com/watch?v=C_yhickVrYs&t=6s"},
+  {img:"04",cat:"sns",v:1,ja:"dr.yoshito",en:"dr.yoshito",role:"Instagram / TikTok",url:"https://www.instagram.com/reel/DacoHm2vzTn/"},
+  {img:"05",cat:"sns",v:1,ja:"dr_tomoka_tlc",en:"dr_tomoka_tlc",role:"Instagram / TikTok",url:"https://www.instagram.com/reel/DXtiCQHTPAY/"},
+  {img:"11",cat:"sns",v:1,ja:"ホテル西長門リゾート",en:"Hotel Nishinagato Resort",role:"Instagram",url:"https://www.instagram.com/reel/DW-aPCTjyuy/"},
+  {img:"08",cat:"sns",v:1,ja:"コナカ・フタタ 公式",en:"KONAKA / FUTATA Official",role:"Instagram / TikTok",url:"https://www.instagram.com/reel/DWD9uS5gdog/"},
+  {img:"10",cat:"sns",v:1,ja:"俺たちみどりの警備員",en:"Oretachi Midori no Keibiin",role:"Instagram / TikTok",url:"https://www.instagram.com/reel/DY4a52_zQmQ/"},
+  {img:"06",cat:"sns",v:1,ja:"mandai_izumi_official",en:"mandai_izumi_official",role:"Instagram",url:"https://www.instagram.com/p/DaHleSHB1cK/"}
+];
+const CATS = [
+  {k:"all",ja:"すべて",en:"All"},
+  {k:"brand",ja:"ブランド・広告",en:"Brand / Promo"},
+  {k:"mv",ja:"ミュージックビデオ",en:"Music Video"},
+  {k:"yt",ja:"YouTube",en:"YouTube"},
+  {k:"sns",ja:"SNSショート",en:"Short-form"}
+];
+const BADGE = {brand:"BRAND",mv:"MV",yt:"YOUTUBE",sns:"SHORT"};
+const CLIENTS = ["Mrs. GREEN APPLE","後藤真希","ヨックモック","KNOCK OUT","早乙女太一","東京プリンスホテル","Mr.都市伝説 関暁夫","ニコラTV","コナカ・フタタ","ホテル西長門リゾート","柳橋唯","福本大晴"];
+
+let lang = "ja", cur = "all";
+try { lang = localStorage.getItem("lang") || ((navigator.language||"ja").startsWith("ja") ? "ja" : "en"); } catch(e) {}
+
+const $ = s => document.querySelector(s);
+const ytId = u => (u.match(/(?:youtu\.be\/|v=)([\w-]{11})/)||[])[1];
+const ytT = u => { const m = u.match(/[?&]t=(\d+)/); return m ? m[1] : 0; };
+
+function render(){
+  document.body.dataset.l = lang;
+  document.documentElement.lang = lang;
+  document.querySelectorAll(".lang button").forEach(b => b.classList.toggle("on", b.dataset.set === lang));
+  $("#filter").innerHTML = CATS.map(c => `<button data-k="${c.k}" class="${c.k===cur?'on':''}">${c[lang]}</button>`).join("");
+  $("#grid").innerHTML = WORKS.map((w,i) => `
+    <a class="card ${w.feat?'feat':''} ${cur!=='all'&&w.cat!==cur?'hide':''}" data-i="${i}" ${ytId(w.url)?'':`href="${w.url}" target="_blank" rel="noopener"`}>
+      <div class="thumb ${w.v?'v':''}">
+        <img src="img/${w.img}.jpg" alt="${w[lang]}" loading="lazy">
+        <span class="badge">${BADGE[w.cat]}</span>
+        <span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+      </div>
+      <h3>${w[lang]}</h3><p>${w.role}</p>
+    </a>`).join("");
+}
+document.addEventListener("click", e => {
+  const lb = e.target.closest(".lang button");
+  if (lb) { lang = lb.dataset.set; try{localStorage.setItem("lang",lang)}catch(_){} render(); return; }
+  const fb = e.target.closest("#filter button");
+  if (fb) { cur = fb.dataset.k; render(); return; }
+  const card = e.target.closest(".card");
+  if (card) {
+    const w = WORKS[card.dataset.i], id = ytId(w.url);
+    if (!id) return; // Instagram等は新しいタブで開く
+    e.preventDefault();
+    $("#frame").innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&start=${ytT(w.url)}" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>`;
+    $("#mt").textContent = w[lang]; $("#mr").textContent = w.role; $("#mlink").href = w.url;
+    $("#modal").classList.add("open"); document.body.style.overflow = "hidden";
+  }
+});
+function closeM(){ $("#modal").classList.remove("open"); $("#frame").innerHTML = ""; document.body.style.overflow = ""; }
+$("#close").onclick = closeM;
+$("#modal").addEventListener("click", e => { if (e.target.id === "modal") closeM(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeM(); });
+
+const mq = CLIENTS.map(c => `<span>${c}</span>`).join("");
+$("#mq").innerHTML = mq + mq;
+
+window.addEventListener("scroll", () => $("#hd").classList.toggle("scrolled", scrollY > 40), {passive:true});
+const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add("in"); io.unobserve(x.target); } }), {threshold:.12});
+document.querySelectorAll(".rv").forEach(el => io.observe(el));
+
+render();
+</script>
+</body>
+</html>
