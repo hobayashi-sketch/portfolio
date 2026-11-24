@@ -202,7 +202,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <p class="ja-only">映像ディレクター／エディター。アーティストのミュージックビデオ、タレントのYouTube、ブランドムービー、医療・ホテル・アパレルなどのSNSショート動画を手がけています。企画段階から関わり、撮影の進行、編集・テロップ・仕上げまで一貫して担当します。</p>
         <p class="en-only">Director and video editor based in Japan. I create music videos, YouTube content for talents and creators, brand films, and short-form videos for clinics, hotels and fashion brands — staying involved from the first plan through the shoot, edit, captions and final delivery.</p>
         <div class="stats">
-          <div><b>21</b><span class="ja-only">掲載作品</span><span class="en-only">Featured works</span></div>
+          <div><b>22</b><span class="ja-only">掲載作品</span><span class="en-only">Featured works</span></div>
           <div><b>4</b><span class="ja-only">ジャンル</span><span class="en-only">Genres</span></div>
           <div><b>20+</b><span class="ja-only">クライアント・出演者</span><span class="en-only">Clients &amp; talents</span></div>
         </div>
@@ -277,6 +277,7 @@ const WORKS = [
   {img:"09",cat:"yt",ja:"ワンエンちゃんねる",en:"One-en Channel",role:"Editing",url:"https://www.youtube.com/watch?v=SJsLg2LlWoA&t=245s"},
   {img:"16",cat:"yt",ja:"しごとリーチ",en:"Shigoto Reach",role:"Editing",url:"https://www.youtube.com/watch?v=SUvdOPIUPSY"},
   {img:"01",cat:"yt",ja:"秦卓民 ビジネスコーチch 対談",en:"Business Coach Channel — Talk",role:"Editing",url:"https://www.youtube.com/watch?v=C_yhickVrYs&t=6s"},
+  {img:"marukome",cat:"sns",v:1,ja:"マルコメ【公式】",en:"Marukome Official",role:"TikTok",url:"https://www.tiktok.com/@marukome_family/video/7690867942099094804"},
   {img:"dr_kosei",cat:"sns",v:1,ja:"河北先生",en:"Dr. Kawakita",role:"TikTok",url:"https://www.tiktok.com/@dr.kosei/video/7675252065790070037"},
   {img:"05",cat:"sns",v:1,ja:"dr_tomoka_tlc",en:"dr_tomoka_tlc",role:"Instagram / TikTok",url:"https://www.instagram.com/reel/DgFHZeDT0SC/"},
   {img:"11",cat:"sns",v:1,ja:"ホテル西長門リゾート",en:"Hotel Nishinagato Resort",role:"Instagram",url:"https://www.instagram.com/reel/DW-aPCTjyuy/"},
@@ -292,7 +293,7 @@ const CATS = [
   {k:"sns",ja:"SNSショート",en:"Short-form"}
 ];
 const BADGE = {brand:"BRAND",mv:"MV",yt:"YOUTUBE",sns:"SHORT"};
-const CLIENTS = ["Mrs. GREEN APPLE","後藤真希","ヨックモック","KNOCK OUT","早乙女太一","東京プリンスホテル","Mr.都市伝説 関暁夫","ニコラTV","コナカ・フタタ","ホテル西長門リゾート","柳橋唯","福本大晴"];
+const CLIENTS = ["Mrs. GREEN APPLE","後藤真希","ヨックモック","マルコメ","KNOCK OUT","早乙女太一","東京プリンスホテル","Mr.都市伝説 関暁夫","ニコラTV","コナカ・フタタ","ホテル西長門リゾート","柳橋唯","福本大晴"];
 
 let lang = "ja", cur = "all";
 try { lang = localStorage.getItem("lang") || ((navigator.language||"ja").startsWith("ja") ? "ja" : "en"); } catch(e) {}
